@@ -1,0 +1,143 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-image: url(../images/foodhub_login-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background: #f8f8f8;
+  box-shadow: 0px 2px 15px black;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.navul{
+  display: flex;
+  gap: 2rem;
+}
+
+.navli{
+  list-style: none;
+}
+
+.navli a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navli a:hover{
+  opacity: 0.5;
+}
+.navli a:active{
+  color: white;
+}
+
+h1{
+  font-weight: bold;
+}
+
+.h1hubcolor{
+  color: orange;
+}
+
+.nav-login{
+  background: none;
+  border: none;
+}
+
+.nav-login:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.nav-login:active{
+  color: rgb(255, 255, 255);
+}
+
+.nav-signup{
+  color: white;
+  border: none;
+  background: orange;
+  border-radius: 8px;
+  margin-left: 1rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-signup:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.nav-signup:active{
+  color: black;
+}
+
+.welcome-section{
+  margin-top: 8rem;
+  margin-left: 10rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.welcome-desc{
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.colorofFood{
+  color: black;
+  font-weight: bold;
+}
+
+.colorofHub{
+  color: orange;
+  font-weight: bold;
+}
+
+.food-quote{
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5); 
+  font-style: italic;
+  font-weight: bold;
+}
+
+.signup-button{
+  color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-size: small;
+  border: none;
+  background: orange;
+  border-radius: 8px;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.signup-button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.signup-button:active{
+  color: black;
+}

@@ -9,88 +9,20 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
-}
-
-nav{
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
-  background: #f8f8f8;
-  box-shadow: 0px 2px 15px black;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 1rem;
-}
-
-.navul{
-  display: flex;
-  gap: 2rem;
-}
-
-.navli{
-  list-style: none;
-}
-
-.navli a{
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.navli a:hover{
-  opacity: 0.5;
-}
-.navli a:active{
-  color: white;
-}
-
-h1{
-  font-weight: bold;
-}
-
-.h1hubcolor{
-  color: orange;
-}
-
-.nav-login{
-  background: none;
-  border: none;
-}
-
-.nav-login:hover{
-  opacity: 0.5;
-  cursor: pointer;
-}
-.nav-login:active{
-  color: rgb(255, 255, 255);
-}
-
-.nav-signup{
-  color: white;
-  border: none;
-  background: orange;
-  border-radius: 8px;
-  margin-left: 1rem;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.nav-signup:hover{
-  opacity: 0.5;
-  cursor: pointer;
-}
-.nav-signup:active{
-  color: black;
+  min-height: 100vh;
 }
 
 .welcome-section{
-  margin-top: 8rem;
-  margin-left: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.welcome-div{
   width: 100%;
   max-width: 600px;
 }
@@ -119,25 +51,109 @@ h1{
   font-weight: bold;
 }
 
-.signup-button{
-  color: white;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  font-size: small;
-  border: none;
-  background: orange;
-  border-radius: 8px;
-  margin-left: 1rem;
-  margin-top: 1.5rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+.form-div{
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  border-radius: 18px;
+  padding-top: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 3rem;
 }
 
-.signup-button:hover{
-  opacity: 0.9;
-  cursor: pointer;
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-.signup-button:active{
-  color: black;
+
+.form-row{
+  display: flex;
+  justify-content: space-between;
+}
+label{
+  font-size: small;
+}
+
+.forgot-pass{
+  font-size: small;
+}
+
+.form-h2{
+  text-align: center;
+  color: white;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+input{
+  border: none;
+  padding: 0.8rem;
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.signin-btn{
+  color: white;
+  background: orange;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.signin-btn:hover{
+  cursor: pointer;
+  background: rgb(244, 135, 33);
+  transform: scale(1.01);
+}
+
+.signin-btn:active{
+  background: orange;
+}
+
+.form-text{
+  font-size: x-small;
+}
+
+.formTwo-text{
+  font-size: smaller;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+}
+
+.social-btn{
+  background: rgba(255, 255, 255, 0.897);
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+  border-radius: 18px;
+}
+
+.social-btn:hover{
+  cursor: pointer;
+  background: rgba(128, 128, 128, 0.265);
+  transform: scale(1.07);
+}
+.social-btn:active{
+  background: white;
+}
+
+img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
 }
