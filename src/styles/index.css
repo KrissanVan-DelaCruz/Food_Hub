@@ -4,7 +4,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
-nav {
+main {
+  margin-top: 80px; 
+  margin-left: 350px; 
+  margin-right: 350px; 
+  padding: 20px;
+}
+
+.nav-bar {
   position: fixed;
   width: 100%;
   background: orange;
@@ -12,7 +19,8 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 0;
+  padding: 1.5rem;
+  z-index: 10;
 }
 
 .nav-container {
@@ -105,4 +113,55 @@ form.search-bar button:active{
 
 .signin-btn:active{
   color: orange;
+}
+
+.navbar-left{
+  position: fixed;
+  background: orange;
+  box-shadow: 0px 2px 15px black;
+  top: 80px;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 5;
+  padding: 1.5rem;
+}
+
+
+.navbar-right{
+  position: fixed;
+  background: orange;
+  box-shadow: 0px 2px 15px black;
+  top: 80px;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 5;
+  padding: 1.5rem;
+}
+
+.home-page{
+  background-image: url(/images/foodhub_login-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  box-shadow: 0px 2px 15px black;
+  border-radius: 18px;
+}
+.home-page h2{
+  text-align: center;
+  color: white;
+}
+
+.h2-daily{
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+.h2-discover{
+  color: orange;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
 }
