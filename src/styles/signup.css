@@ -85,6 +85,13 @@ button{
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+button:hover{
+  background: darkorange;
+  cursor: pointer;
+  
+}
+
 footer{
   right: 0;
   left: 0;
