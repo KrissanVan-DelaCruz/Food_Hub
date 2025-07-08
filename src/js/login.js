@@ -14,6 +14,16 @@ document.getElementById("signin-btn").addEventListener("click", function(event){
     return;
   }
 
+  if (password.length < 10) {
+    alert("Password must be at least 10 characters long!");
+    return;
+  }
+
+  if (!/^[A-Za-z0-9]+$/.test(password)) {
+    alert("Password must contain only letters and numbers!");
+    return;
+  }
+  
   
   window.location.href = "/src/pages/index.html";
 });

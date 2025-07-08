@@ -4,6 +4,7 @@ document.getElementById("signup-btn").addEventListener("click", function(event){
   const email = document.getElementById("email").value;
   const password= document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirm-password").value;
+  const termsAccepted = document.getElementById("terms").checked;
 
   if (!email || !password || !confirmPassword) {
     alert("Please fill in all fields!");
@@ -15,9 +16,24 @@ document.getElementById("signup-btn").addEventListener("click", function(event){
     return;
   }
 
+  if (password.length < 10) {
+    alert("Password must be at least 10 characters long!");
+    return;
+  }
+
+  if (!/^[A-Za-z0-9]+$/.test(password)) {
+    alert("Password must contain only letters and numbers!");
+    return;
+  }
+
   if (confirmPassword !== password) {
     alert("Passwords do not match!");
     return;
+  }
+
+  if (!termsAccepted) {
+    alert("You must accept the terms and conditions!");
+    return
   }
 
   window.location.href = "/src/pages/login.html";
