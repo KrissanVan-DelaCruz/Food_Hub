@@ -28,6 +28,7 @@ main {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
   padding: 0 2rem;
   width: 100%;
@@ -44,6 +45,7 @@ h1{
 .search-bar {
   display: flex;
   align-items: center;
+  width: 100%;
   width: 700px; 
   background: white;
   padding-right: 0.3rem;
@@ -164,4 +166,162 @@ form.search-bar button:active{
   color: orange;
   font-weight: bold;
   text-shadow: 2px 2px 4px black;
+}
+
+@media (max-width: 1430px){
+  main {
+    margin-left: 300px; 
+    margin-right: 300px; 
+  }
+  .navbar-right,
+  .navbar-left{
+    width: 250px;
+  }
+}
+
+@media (max-width: 1320px){
+  main{
+    margin-left: 250px; 
+    margin-right: 250px; 
+  }
+  .navbar-left,
+  .navbar-right{
+    width: 200px;
+  }
+  .nav-container{
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1200px){
+  main {
+    margin-left: 230px; 
+    margin-right: 230px; 
+  }
+  .navbar-left,
+  .navbar-right{
+    width: 180px;
+  }
+  .nav-container{
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+}
+@media (max-width: 1100px){
+  main {
+    margin-left: 200px; 
+    margin-right: 200px; 
+  }
+  .navbar-left,
+  .navbar-right{
+    width: 150px;
+  }
+  .nav-container{
+    width: 100%;
+    max-width: 850px;
+  }
+  .search-bar{
+    width: 100%; 
+    max-width: 500px;
+  }
+  .home-page{
+    padding: 1rem;
+  }
+}
+
+@media(max-width: 960px){
+  main{
+    margin-left: 180px; 
+    margin-right: 180px; 
+  }
+  .nav-container{
+    width: 100%;
+    max-width: 750px;
+  }
+  .navbar-left,
+  .navbar-right{
+    width: 120px;
+  }
+  .search-bar{
+    width: 100%; 
+    max-width: 400px;
+  }
+}
+
+/*start of tablet and mobile views*/
+/*nav bar subjected to change*/
+@media (max-width: 900px){
+  main {
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+  .nav-container{
+    width: 100%;
+    max-width: 700px;
+  }
+  .navbar-left,
+  .navbar-right{
+    display: none;
+  }
+  .search-bar{
+    width: 100%; 
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 780px){
+ 
+  .nav-container{
+    width: 100%;
+    max-width: 600px;
+  }
+  .search-bar{
+    width: 100%; 
+    max-width: 300px;
+  }
+  .home-page{
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 667px){
+  main {
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+  .nav-container{
+    width: 100%;
+    max-width: 500px;
+  }
+  .search-bar{
+    width: 100%; 
+    max-width: 250px;
+  }
+  .home-page{
+    padding: 0.5rem;
+  }
+  h1{
+    font-size: 1rem;
+  }
+  .nav-buttons a{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 570px){
+ 
+  .nav-container{
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .home-page{
+    padding: 0.3rem;
+  }
+ .nav-buttons{
+  margin-left: 1rem;
+ }
+  
 }
