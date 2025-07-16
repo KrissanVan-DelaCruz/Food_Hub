@@ -38,3 +38,4 @@ document.getElementById("signup-btn").addEventListener("click", function(event){
 
   window.location.href = "/src/pages/login.html";
 });
+
