@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles/profile.css">
+
+  <title>Profile</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-container">
+        <h1><i class="fa fa-cutlery"></i> FOOD <span class="h1hubcolor">HUB</span></h1>
+        <form class="search-bar" action="">
+          <input type="text" name="search" placeholder="Search" id="">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="nav-buttons">
+          <a href="/src/pages/signup.html" class="signup-btn">Sign up</a>
+          <p class="p-btn">|</p>
+          <a href="/src/pages/login.html" class="signin-btn">Sign in</a>
+        </div>
+        <!-- mobile navbar changes-->
+        <div class="mobile-nav">
+          <button><i class="fa fa-search fa-2x"></i></button>
+          <button><i class="fas fa-bars fa-2x"></i></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="user-profile">
+      <div class="profile-div">
+        <img src="/images/pfp.jpg" alt="pfp" class="profile-img">
+        <h2>Krissan Van De la Cruz</h2>
+      </div>
+    </section>  
+    <section class="tag-container">
+      <div class="post-tag">
+        <p>POST</p>
+      </div>
+    </section>
+    <section class="post-container">
+      <div class="user-info">
+        <a href=""><img src="/images/pfp.jpg" alt="profile pic" class="pfp"></a>
+        <div class="name-time">
+          <a href="" style="color: black; font-weight: bold;">Krissan Van De la Cruz</a>
+          <a href="">4h</a>
+        </div>
+      </div>
+      <div class="user-caption">
+        <p>Discover and Share Delicious Food at Food Hub!</p>
+      </div>
+      <div class="user-img">
+        <img src="/images/foodhub.png" alt="Food Hub" class="post-img">
+      </div>
+      <div class="user-react">
+        <button><i class="fa fa-thumbs-up"></i> Like</button>
+        <button><i class="fa fa-comment"></i> Comment</button>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
