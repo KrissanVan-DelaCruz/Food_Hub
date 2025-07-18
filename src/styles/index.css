@@ -279,8 +279,58 @@ form.search-bar button:active{
   background: rgba(192, 192, 192, 0.295);
 }
 
+.about-popup{
+  display: none;
+  z-index: 7;
+  background: orange;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  position: fixed;
+  margin-top: 7rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 15px;
+  padding-bottom: 8rem;
+}
 
+.exit{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 2rem;
+}
 
+.exit button{
+  border: none;
+  background: darkorange;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0,0.5);
+  border-radius: 50%;
+  width: 2.5rem;
+  font-size: 30px;
+}
+.exit button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.about-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0, 0 , 0 , 0.5);
+  gap: 2rem;
+  font-size: 20px;
+  margin-top: 4rem;
+}
 
 @media (max-width: 1430px){
   main {

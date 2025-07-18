@@ -38,16 +38,28 @@
     <div class="nav-left-container">
       <ul class="ul-left">
         <li><button id="user-profile"><i class="fa fa-user"></i> Profile</button></li>
-        <li><button><i class="fa fa-info-circle"></i> About</button></li>
-        <li><button><i class="fa fa-envelope"></i> Contact</button></li>
+        <li><button onclick="aboutOpenButton()"><i class="fa fa-info-circle"></i> About</button></li>
+        <li><button id="contact"><i class="fa fa-envelope"></i> Contact</button></li>
       </ul>
     </div>
   </nav>
+
+  <section id="about-popup" class="about-popup" >
+    <div class="exit">
+      <p><i class="fa fa-cutlery"></i></p>
+      <button onclick="aboutCloseButton()">X</button>
+    </div>
+    <div class="about-info">
+      <h2>Welcome to <span style="color: black;"><i class="fa fa-cutlery"></i> Food Hub!</span></h2>
+      <p>Where you Explore and Share Food ideas with other Food Lovers!</p>
+    </div>
+  </section>
+
   <nav class="navbar-right">
     <div class="nav-right-container">
       <ul class="ul-right">
-        <li><button><i class="fa fa-cog"></i> Settings</button></li>
-        <li><button><i class="fa fa-question-circle"></i> Help</button></li>
+        <li><button id="settings"><i class="fa fa-cog"></i> Settings</button></li>
+        <li><button id="help"><i class="fa fa-question-circle"></i> Help</button></li>
       </ul>
     </div>
   </nav>
@@ -77,7 +89,7 @@
     </section>
   </main>
 
-<script src="/src/scripts/index.js"></script>
+  <script src="/src/scripts/index.js"></script>
 </body>
 
 </html>
