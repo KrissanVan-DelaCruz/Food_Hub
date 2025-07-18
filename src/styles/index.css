@@ -130,23 +130,28 @@ form.search-bar button:active{
   width: 300px;
   height: 100vh;
   z-index: 5;
-  padding: 1.5rem;
+  padding-top: 0.5rem;
 }
 
-.ul-left {
+.ul-left{
   list-style: none;
 }
-.ul-left li {
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-}
-.ul-left li a {
-  text-decoration: none;
+.ul-left li button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   color: white;
   font-weight: bold;
+  border: none;
+  background: none;
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
 }
-.ul-left li a:hover {
-  opacity: 0.8;
+.ul-left li button:hover {
+  background: rgba(145, 145, 145, 0.491);
+  cursor: pointer;
 }
 
 .navbar-right{
@@ -158,23 +163,28 @@ form.search-bar button:active{
   width: 300px;
   height: 100vh;
   z-index: 5;
-  padding: 1.5rem;
+  padding-top: 0.5rem;
 }
 
-.ul-right {
+.ul-right{
   list-style: none;
 }
-.ul-right li {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-.ul-right li a {
-  text-decoration: none;
+.ul-right li button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   color: white;
   font-weight: bold;
+  border: none;
+  background: none;
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
 }
-.ul-right li a:hover {
-  opacity: 0.8;
+.ul-right li button:hover {
+  background: rgba(145, 145, 145, 0.491);
+  cursor: pointer;
 }
 
 .home-page{
@@ -216,6 +226,7 @@ form.search-bar button:active{
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.395);
 }
 .pfp{
   height: 50px;
