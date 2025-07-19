@@ -24,8 +24,15 @@ function settingsOpenButton(){
   document.getElementById("settings-popup").style.display = "Block"; 
 }
 function settingsCloseButton(){
-  document.getElementById("popup-page").style.display = "none";
+  document.getElementById("settings-popup").style.display = "none";
 }
+
+//settings-profile
+document.getElementById("profile-settings").addEventListener('click', function(event){
+  event.preventDefault();
+
+  window.location.href = "/src/pages/profile.html"
+});
 
 //help-popup
 function helpOpenButton(){

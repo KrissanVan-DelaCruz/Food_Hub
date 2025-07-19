@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+  <!--header/navbar-->
   <header>
     <nav class="nav-bar">
       <div class="nav-container">
@@ -33,7 +33,7 @@
       </div>
     </nav>
   </header>
-
+  <!--navleft-->
   <nav class=navbar-left>
     <div class="nav-left-container">
       <ul class="ul-left">
@@ -43,7 +43,6 @@
       </ul>
     </div>
   </nav>
-
   <section id="about-popup" class="about-popup">
     <div class="exit">
       <p><i class="fa fa-cutlery"></i></p>
@@ -65,7 +64,7 @@
         out at <a href="" style="color: blue;">foodhub@gmail.com</a> for customer support and inquiries.</p>
     </div>
   </section>
-
+  <!--navright-->
   <nav class="navbar-right">
     <div class="nav-right-container">
       <ul class="ul-right">
@@ -74,9 +73,14 @@
       </ul>
     </div>
   </nav>
-
   <section id="settings-popup" class="settings-popup">
-    
+    <div class="settings-exit">
+      <p><i class="fa fa-cutlery"></i></p>
+      <button onclick="settingsCloseButton()">X</button>
+    </div>
+    <div class="settings-btn">
+      <button id="profile-settings"><i class="fa fa-user"></i> Profile Settings</button>
+    </div>
   </section>
   <section id="help-popup" class="help-popup">
     <div class="exit">
@@ -90,7 +94,7 @@
       </p>
     </div>
   </section>
-
+  <!--main-->
   <main>
     <section class="home-page">
       <h2><span class="h2-daily">Daily</span> <span class="h2-discover">Discover</span></h2>
@@ -118,5 +122,4 @@
 
   <script src="/src/scripts/index.js"></script>
 </body>
-
 </html>
