@@ -1,5 +1,5 @@
-document.getElementById("user-profile").addEventListener("click", function(event){
-  event.preventDefault();
+document.getElementById("user-profile").addEventListener("click", function(e){
+  e.preventDefault();
 
   window.location.href = "/src/pages/profile.html";
 });
@@ -11,6 +11,7 @@ function aboutOpenButton(){
 function aboutCloseButton(){
   document.getElementById("about-popup").style.display = "none";
 }
+
 //contactpopup
 function contactOpenButton(){
   document.getElementById("contact-popup").style.display = "Block"; 
@@ -28,8 +29,8 @@ function settingsCloseButton(){
 }
 
 //settings-profile
-document.getElementById("profile-settings").addEventListener('click', function(event){
-  event.preventDefault();
+document.getElementById("profile-settings").addEventListener('click', function(e){
+  e.preventDefault();
 
   window.location.href = "/src/pages/profile.html"
 });
