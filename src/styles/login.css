@@ -16,29 +16,20 @@ body{
 }
 
 nav{
-  position: fixed;
+  display: flex;
+  align-items: center;
   background: orange;
   box-shadow: 0px 2px 15px black;
   top: 0;
   right: 0;
   left: 0;
   padding: 1rem;
-  width: 100%;
-}
-
-.nav-container{
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
-  width: 100%;
 }
 
 h1{
   text-align: center;
   font-weight: bold;
+  margin-left: 2rem;
 }
 
 .h1hubcolor{
@@ -55,7 +46,6 @@ h1{
 }
 
 .welcome-div{
-  width: 100%;
   max-width: 600px;
 }
 
@@ -198,4 +188,53 @@ footer{
   padding: 1.8rem;
   text-align: center;
   color: gray;
+}
+
+@media (max-width: 1280px){
+  .welcome-section{
+    gap: 5rem;
+  }
+  .welcome-div{
+    max-width: 400px;
+  }
+  .welcome-desc{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1024px){
+  .welcome-section{
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 2.5rem;
+  }
+  .welcome-div{
+    max-width: 700px;
+    text-align: center;
+  }
+  .welcome-desc{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px){
+  .welcome-section{
+    margin-top: 2rem;
+  }
+  .welcome-div{
+    max-width: 400px;
+  }
+  .welcome-desc{
+    font-size: 1rem;
+  }
+  .form-h2{
+    font-size: 20px;
+  }
+  .form-div{
+    padding-top: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-bottom: 1rem;
+    font-size: 10px;
+  }
 }

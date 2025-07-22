@@ -6,7 +6,10 @@
 
 .nav-bar {
   position: fixed;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
   background: orange;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
   top: 0;
@@ -18,20 +21,18 @@
 
 .mobile-nav{
   display: none ;
+  gap: 2rem;
+  margin-right: 1.8rem;
 }
 
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  padding: 0 2rem;
-  width: 100%;
+.mobile-nav button{
+  border: none;
+  background: none;
+  color: white;
 }
 
 h1{
+  margin-left: 2rem;
   font-weight: bold;
 }
 
@@ -42,7 +43,6 @@ h1{
 .search-bar {
   display: flex;
   align-items: center;
-  width: 100%;
   width: 700px; 
   background: white;
   padding-right: 0.3rem;
@@ -75,6 +75,7 @@ form.search-bar button:active{
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-right: 2rem;
 }
 .p-btn{
   color: rgb(220, 219, 219);
@@ -266,7 +267,7 @@ form.search-bar button:active{
 
 .settings-popup{
   position: fixed;
-  display: flex;
+  display: none;
   flex-direction: column;
   background: orange;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
@@ -451,4 +452,83 @@ main {
 .user-react button:hover{
   cursor: pointer;
   background: rgba(192, 192, 192, 0.295);
+}
+
+@media (max-width: 1280px){
+  .search-bar{
+    width: 500px;
+  }
+  .navbar-right,
+  .navbar-left{
+    width: 250px;
+  }
+  main{
+    margin-left: 280px; 
+    margin-right: 280px;
+  }
+}
+
+@media (max-width: 1024px){
+  .search-bar{
+    width: 400px;
+  }
+  .search-bar input{
+    font-size: 13px;
+  }
+  .navbar-right,
+  .navbar-left{
+    width: 180px;
+  }
+  .nav-bar{
+    font-size: 10px;
+  }
+  main{
+    margin-left: 200px; 
+    margin-right: 200px;
+  }
+  .home-page{
+    padding: 1rem;
+  }
+  .post-img{
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px){
+  h1{
+    font-size: 20px;
+  }
+  .search-bar{
+    display: none;
+  }
+  .navbar-right,
+  .navbar-left{
+    display: none;
+  }
+  .nav-buttons{
+    display: none;
+  }
+  .mobile-nav{
+    display: flex;
+  }
+  main{
+    margin-left: 20px; 
+    margin-right: 20px;
+  }
+  .home-page{
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 376px){
+  main{
+    margin-left: 10px; 
+    margin-right: 10px;
+  }
+  .home-page{
+    padding: 0.2rem;
+  }
+  .post-img{
+    height: 300px;
+  }
 }

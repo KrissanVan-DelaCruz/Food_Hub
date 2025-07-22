@@ -12,7 +12,6 @@ main{
 
 .nav-bar {
   position: fixed;
-  width: 100%;
   background: orange;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
   top: 0;
@@ -24,17 +23,22 @@ main{
 
 .mobile-nav{
   display: none ;
+  gap: 2rem;
+  margin-right: 1.8rem;
+}
+
+.mobile-nav button{
+  border: none;
+  background: none;
+  color: white;
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
   padding: 0 2rem;
-  width: 100%;
 }
 
 h1{
@@ -48,7 +52,6 @@ h1{
 .search-bar {
   display: flex;
   align-items: center;
-  width: 100%;
   width: 700px; 
   background: white;
   padding-right: 0.3rem;
@@ -221,4 +224,70 @@ form.search-bar button:active{
 .user-react button:hover{
   cursor: pointer;
   background: rgba(192, 192, 192, 0.295);
+}
+
+@media (max-width: 1280px){
+  main{
+    margin-left: 250px; 
+    margin-right: 250px; 
+  }
+  .search-bar{
+    width: 500px;
+  }
+}
+
+@media (max-width: 1024px){
+  main{
+    margin-left: 130px; 
+    margin-right: 130px; 
+  }
+  .search-bar{
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px){
+  .search-bar{
+    display: none;
+  }
+  .nav-buttons{
+    display: none;
+  }
+  .mobile-nav{
+    display: flex;
+  }
+  main{
+    margin-left: 80px; 
+    margin-right: 80px; 
+  }
+  .profile-img{
+    width: 250px;
+    height: 10rem;
+  }
+  .profile-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px){
+  main{
+    margin-left: 50px; 
+    margin-right: 50px; 
+  }
+}
+
+@media (max-width: 480px){
+  main{
+    margin-left: 20px; 
+    margin-right: 20px; 
+  }
+  .post-img{
+    height: 400px;
+  }
+  .profile-img{
+    width: 200px;
+    height: 8rem;
+  }
 }
