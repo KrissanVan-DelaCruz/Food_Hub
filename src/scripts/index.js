@@ -31,7 +31,7 @@ function settingsCloseButton(){
 //settings-profile
 document.getElementById("profile-settings").addEventListener('click', function(e){
   e.preventDefault();
-
+  
   window.location.href = "/src/pages/profile.html"
 });
 
@@ -44,7 +44,6 @@ function helpCloseButton(){
 }
 
 //mobile-nav-btn
-
 function mobileNavBtnOpen(){
   document.getElementById("mobile-nav-btn").style.display = "Block";
 }
