@@ -43,4 +43,11 @@ function helpCloseButton(){
   document.getElementById("help-popup").style.display = "none";
 }
 
+//mobile-nav-btn
 
+function mobileNavBtnOpen(){
+  document.getElementById("mobile-nav-btn").style.display = "Block";
+}
+function mobileNavBtnClose(){
+  document.getElementById("mobile-nav-btn").style.display = "none";
+}
