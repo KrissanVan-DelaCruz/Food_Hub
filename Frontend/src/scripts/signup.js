@@ -36,6 +36,6 @@ document.getElementById("signup-btn").addEventListener("click", function(e){
     return
   }
 
-  window.location.href = "/src/pages/login.html";
+  window.location.href = "/Frontend/src/pages/login.html";
 });
 

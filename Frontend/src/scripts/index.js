@@ -1,7 +1,7 @@
 document.getElementById("user-profile").addEventListener("click", function(e){
   e.preventDefault();
 
-  window.location.href = "/src/pages/profile.html";
+  window.location.href = "/Frontend/src/pages/profile.html";
 });
 
 //about-pop
@@ -32,7 +32,7 @@ function settingsCloseButton(){
 document.getElementById("profile-settings").addEventListener('click', function(e){
   e.preventDefault();
   
-  window.location.href = "/src/pages/profile.html"
+  window.location.href = "/Frontend/src/pages/profile.html"
 });
 
 //help-popup

@@ -14,5 +14,5 @@ document.getElementById("signin-btn").addEventListener("click", function(e){
     return;
   }
 
-  window.location.href = "/src/pages/index.html";
+  window.location.href = "/Frontend/src/pages/index.html";
 });
