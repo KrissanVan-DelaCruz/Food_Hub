@@ -1,4 +1,4 @@
-backend/node_modules/
+node_modules/
 images/
 sample.css
 sample.js
